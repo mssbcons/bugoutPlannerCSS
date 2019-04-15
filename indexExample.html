@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<style>
+
+
+  .menuBar <!-- position topRight, child divs to align horizontally, divs to expand to fit content -->
+  .toolBoxBar <!-- child elements to align horizontally -->
+  .preLoader <!-- simple spinner preloader for each toolBar -->
+  .info <!--  background-image:url('./images/qM.png') -->
+  .toolBarLink <!-- single blue line indented LH & RH to orange on rollover -->
+  .toolBarImg  <!-- height 80% of Parent -->
+  .toolBarLink <!-- height 20% of Parent -->
+  .toolBarText <!-- body text should left-align and vertica-align centre -->
+  .toolBoxOpen <!-- toolbox expands to page width whilst maintaining aspect ration -->
+
+
+
+
+</style>
+
+
+
+<div>
+
+  <div id="meuBar" class="menuBar">
+      <div id="item1">text1</div>
+      <div id="item2">text2</div>
+      <div id="item3">text3</div>
+      <div id="item4">text4</div>
+  </div>
+
+  <div id="header">
+
+  </div>
+
+  <div id="introText"></div>
+
+
+  <div> <!-- 3 columns (c1, c2, c3 ) c1 = c3 = 20%, c2 = 80%-->
+
+    <!-- c1 -->
+    <div id="c1"></div>
+
+
+    <!-- c2 -->
+    <div id="toolBox"> <!-- c2 when applied class .toolBoxOpen allows div to expand to window width whilst maintaining aspect ratio -->
+
+      <div id="toolBoxHeader"></div>
+
+      <div class="toolBoxBar"><!-- items to align horizontally pageInitPreLoader to have to classes preloader & loadSuccessful -->
+        <div id="pageInitPreLoader" class="preLoader">Loader</div>
+        <div id="pageInitText">Loading</div>
+      </div>
+
+      <div class="toolBoxBar"><!-- select size to be proportional to page and select option font to be consistent with page font -->
+        <div id="scenarioInfo" class="info"></div>
+        <select id="scenarioList"></select>
+      </div>
+
+      <div id="mapDiv"></div>
+
+      <div class="toolBoxBar" style="visibility:hidden"> <!-- 2 columns (c1, c2) c1 20%, c2 = 80% -->
+        <!-- c1 -->
+        <div>
+          <div id="climatePreLoader" class="preLoader">Loader</div>
+          <div id="climateLoaded" style="visibility: hidden">
+            <div id="climateImage" class="toolBarImg; toolBarImg1"></div>
+            <div class="toolBarLink"></div>
+          </div>
+        </div>
+        <!-- c2 -->
+        <div id="climateText" class="toolBarText">Text</div>
+      </div>
+
+
+      <div class="toolBoxBar" style="visibility:hidden"> <!-- 2 columns (c1, c2) c1 20%, c2 = 80% -->
+        <!-- c1 -->
+        <div>
+          <div id="populationPreLoader" class="preLoader">Loader</div>
+          <div id="populationLoaded" style="visibility: hidden">
+            <div id="populationImage" class="toolBarImg; toolBarImg1"></div>
+            <div class="toolBarLink"></div>
+          </div>
+        </div>
+        <!-- c2 -->
+        <div id="populationText" class="toolBarText">Text</div>
+      </div>
+
+      <div class="toolBoxBar" style="visibility:hidden"> <!-- 2 columns (c1, c2) c1 20%, c2 = 80% -->
+        <!-- c1 -->
+        <div>
+          <div id="assetsPreLoader" class="preLoader">Loader</div>
+          <div id="assetsLoaded" style="visibility: hidden">
+            <div id="assetsImage" class="toolBarImg; toolBarImg1"></div>
+            <div class="toolBarLink"></div>
+          </div>
+        </div>
+        <!-- c2 -->
+        <div id="assetsText" class="toolBarText">Text</div>
+      </div>
+
+
+      <div>
+
+
+        <div class="toolBoxBar" style="visibility:hidden"> <!-- child divs to align horizontally -->
+          <div id="capacityImage">Image</div>
+          <div id="capacityTextInfo" class="info">Text</div>
+        </div>
+
+        <div id="capacitySelect"> <!-- a series of sliders with corresponding divs for text width for text and slider to be consistent text to be centred vertically and horizontally   -->
+
+          <div>
+            <div>customRange1 Text</div>
+            <div><input type="range" class="custom-range" id="customRange1"></div>
+          </div>
+
+          <div>
+            <div>customRange2 Text</div>
+            <div><input type="range" class="custom-range" id="customRange2"></div>
+          </div>
+
+          <div>
+            <div>customRange3 Text</div>
+            <div><input type="range" class="custom-range" id="customRange3"></div>
+          </div>
+
+          <div>
+            <div>customRange4 Text</div>
+            <div><input type="range" class="custom-range" id="customRange4"></div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+
+    <div>
+
+    </div>
+
+      <div id="toolBoxFooter"> <!-- 3 columns (c1, c2, c3) c1 20%, c2 = 50%, c3 = 30% -->
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+    </div>
+
+    <!-- c3 -->
+    <div></div>
+
+
+  </div>
+
+
+</div>
+
+<!---
+
+lh floating share buttons twitter, fb, ln, email see https://www.addthis.com/get/share/
+
+-->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=??????????????"></script>
+</body>
+</html>

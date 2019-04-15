@@ -4,5 +4,5 @@ CSS to be built from the bootstap framework V 4.1
 Where widgets or plugins are used this is to be documented
 All of the common CSS Tags are to be styled including <table>
 Where images are required use single color png or jpeg.
-For the <body> image use greyscale
+For the <body> image use a stock image in greyscale
 CSS to be compatible with and will be tested on IE, Chrome & Safari
